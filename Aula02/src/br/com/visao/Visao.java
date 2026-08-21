@@ -53,6 +53,9 @@ public class Visao extends javax.swing.JFrame {
         jLvalor2.setText("Valor 2");
 
         jResultado.setText("0.00");
+        jResultado.setMaximumSize(new java.awt.Dimension(23, 30));
+        jResultado.setMinimumSize(new java.awt.Dimension(23, 30));
+        jResultado.setPreferredSize(new java.awt.Dimension(23, 20));
 
         jButton1.setText("+");
         jButton1.addActionListener(this::jButton1ActionPerformed);
@@ -77,9 +80,6 @@ public class Visao extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(83, 83, 83)
-                        .addComponent(jResultado))
-                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
@@ -97,7 +97,10 @@ public class Visao extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
+                        .addComponent(jResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -122,8 +125,8 @@ public class Visao extends javax.swing.JFrame {
                                 .addComponent(jButton1)
                                 .addComponent(jButton3)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jResultado)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addComponent(jResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 26, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
