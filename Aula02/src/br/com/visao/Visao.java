@@ -135,7 +135,7 @@ public class Visao extends javax.swing.JFrame {
         c.setValor1(Double.valueOf(jTvalor1.getText()));
         c.setValor2(Double.valueOf(jTvalor2.getText()));
         c.setOp(1);
-        jResultado.setText("Soma =" + c.calcular());
+        jResultado.setText("Soma = " + c.calcular());
      
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -145,7 +145,7 @@ public class Visao extends javax.swing.JFrame {
         c.setValor1(Double.valueOf(jTvalor1.getText()));
         c.setValor2(Double.valueOf(jTvalor2.getText()));
         c.setOp(3);
-        jResultado.setText("Multiplicação =" + c.calcular());
+        jResultado.setText("Multiplicação = " + c.calcular());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -156,7 +156,7 @@ public class Visao extends javax.swing.JFrame {
         if (c.getValor2() == 0) {
             jResultado.setText("OPAI VEI NAO DA PRA DIVIDIR POR ZERO NE PIVETE, BARRIL DOBRADO");
         } else {
-            jResultado.setText("Divisão =" + c.calcular());
+            jResultado.setText("Divisão = " + c.calcular());
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -166,7 +166,7 @@ public class Visao extends javax.swing.JFrame {
         c.setValor1(Double.valueOf(jTvalor1.getText()));
         c.setValor2(Double.valueOf(jTvalor2.getText()));
         c.setOp(2);
-        jResultado.setText("Subtração =" + c.calcular());
+        jResultado.setText("Subtração = " + c.calcular());
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jTvalor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTvalor1ActionPerformed
