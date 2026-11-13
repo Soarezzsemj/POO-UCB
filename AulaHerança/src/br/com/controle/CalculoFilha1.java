@@ -4,8 +4,23 @@
  */
 package br.com.controle;
 
+
+
+// para fazer uma herança usa o extends 
 public class CalculoFilha1 extends Calculos{
    public int somar(int valor1,int valor2){
     return (valor1+valor2);
    } 
+
+    @Override
+    public double somar() {
+        return 200; 
+        
+        
+    }
+   
+   
+   
+   
+   
 }
